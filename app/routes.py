@@ -3,6 +3,7 @@ from app import app
 
 @app.route('/')
 @app.route('/index')
+@app.route('/home')
 def index():
     user = {'username': 'Travis'}
     posts = [
@@ -27,3 +28,12 @@ def users():
         {'username': 'ZipZap'}
     ]
     return render_template('users.html', user=user, users=users)
+
+@app.route('/books')
+def books():
+    return render_template('books.html')
+
+
+@app.route('/authors')
+def authors():
+    return render_template('authors.html')

@@ -1,1 +1,2 @@
-FLASK_APP=user_book_wishlists.py
+FLASK_APP=run_app.py
+FLASK_ENV=development
