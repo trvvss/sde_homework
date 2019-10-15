@@ -1,0 +1,14 @@
+<html>
+    <head>
+      {% if title %}
+      <title>{{ title }} - BookList Extraordinaire</title>
+      {% else %}
+      <title>Welcome to BookList Extraordinaire</title>
+      {% endif %}
+    </head>
+    <body>
+        <div>BookList Extraordinaire: <a href="{{url_for ('index')}}">Home</a></div>
+        <hr>
+        {% block content %}{% endblock %}
+    </body>
+</html>
